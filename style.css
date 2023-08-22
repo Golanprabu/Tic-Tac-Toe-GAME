@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #fdfffc;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #0bff1f;
+}
+#top{
+    width: 100vw;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    padding: 15px;
+    flex-direction: column;
+}
+#game_tital{
+    width: 100%;
+    height: 30%;
+    font-size: xx-large;
+    font-family: 'Chelsea Market', cursive;
+}
+#game_result{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 70%;
+}
+#round_number{
+    font-size: larger;
+    padding: 5px;
+    height: 40%;
+}
+#result{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#X_turn, #O_turn, #draw{
+    width: 33.333%;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+}
+#X_turn{
+    background-color: rgb(14, 236, 125);
+    border-radius: 5px 0 0 5px;
+}
+#O_turn{
+    background-color: rgb(170, 170, 170);
+}
+#draw{
+    background-color: rgb(253, 73, 73);
+    border-radius: 0 5px 5px 0;
+}
+#game_container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+#container{
+    height: 80vw;
+    width: 80vw;
+    margin-left: 10vw;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3, 33.333%);
+    border-radius: 25px;
+    border: solid;
+    overflow: hidden;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+}
+#container > button{
+    padding: 4px;
+    display: grid;
+    border: none;
+    place-items: center;
+    background-size: cover;
+    font-size:xx-large;
+    background-color: #20ff02;
+    color: #d3d3d3;
+
+}
+#container > button:disabled{
+    padding: 4px;
+    border: none;
+    display: grid;
+    place-items: center;
+    background-size: cover;
+    font-size:xx-large;
+    color: #ffffff;
+    background-color: #0b5c0b;
+}
